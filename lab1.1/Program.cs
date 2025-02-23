@@ -25,8 +25,10 @@ namespace FirstApp
             {
                 outRuble = rubli + " рублей ";
             }
+            outMessage += outRuble;
             if (kopeiki == 0)
-            { }
+            { return outMessage;
+            }
             if ((kopeiki == 1) || ((kopeiki % 10 == 1) && (kopeiki / 10 != 1)))
             {
                 outKopeiki = kopeiki + " копейка ";
@@ -39,7 +41,7 @@ namespace FirstApp
             {
                 outKopeiki = kopeiki + " копеек ";
             }
-            outMessage = outRuble + outKopeiki;
+            outMessage += outKopeiki;
             return outMessage;
         }
 
