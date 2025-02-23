@@ -18,3 +18,17 @@ else
     Console.Write(rubli + " рублей ");
 }
 
+if (kopeiki == 0)
+{ }
+if ((kopeiki == 1) || (kopeiki % 10 == 1))
+{
+    Console.Write(kopeiki + " копейка ");
+}
+else if (((kopeiki > 1) && (kopeiki <= 4)) || ((kopeiki % 10 > 1) && (kopeiki % 10 < 5)))
+{
+    Console.Write(kopeiki + " копейки ");
+}
+else
+{
+    Console.Write(kopeiki + " копеек ");
+}
